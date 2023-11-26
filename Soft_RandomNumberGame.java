@@ -17,7 +17,7 @@ public class Soft_RandomNumberGame {
             System.out.println("Welcome to random number guessing game!");
             System.out.println();
             while(!guessrandomNumber && attempts < maxAttempts){
-                System.out.print(RandomNumber);
+                // System.out.print(RandomNumber);
                 System.out.println("Enter the guess Number(1 - 100): ");
                 int userGuess = sc.nextInt();
                 attempts++;
@@ -44,6 +44,8 @@ public class Soft_RandomNumberGame {
                 System.out.print("Do you want to play another round? (yes/no): ");
                 String playAgainInput = sc.next().toLowerCase();
                 if (playAgainInput.equals("no")) {
+                    System.out.println("OK");
+                    System.out.println("You've won " + totalRoundsWon + " rounds!");
                     break;
                 }
             } else {
